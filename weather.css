@@ -1,0 +1,108 @@
+/* general styles */
+.colorMe {
+    color: white;
+}
+
+
+/* header  styles */
+header {
+    background-color: rgb(59, 59, 198);
+    height: 10vh;
+}
+
+header h1 {
+    color: white;
+    width: 35%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* current and future weather styling */
+#firstAside {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* today weather styles */
+#today {
+    height: 35vh;
+    border: 1px solid black;
+    max-width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    box-shadow: -2px 3px black;
+}
+
+/* history section styles */
+.historySec {
+    width: 300px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#search-button {
+    width: 300px;
+    background-color: rgb(51, 155, 246);
+    margin: 20px auto;
+    border-radius: 10px;
+    color: white;
+}
+
+.history h2 {
+    font-weight: bold;
+}
+
+.histBtns {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(160, 158, 158);
+    border: none;
+}
+/* forecast div */
+.forecastDiv {
+    width: 60%;
+    margin-left: auto;
+}
+
+/* forecast styles */
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.future {
+    background-color: rgba(40, 49, 66, 0.969);
+    height: 35vh;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#today .imgP {
+    display: flex;
+}
+
+.forecastDiv h2 {
+    margin-top: 10px;
+}
+
+.dynamicBtns {
+    display: flex;
+    flex-direction: column;
+}
+
+#hr {
+    height: 10px;
+    background-color: black;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="assets/styles/reset.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="assets/styles/weather.css">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white weather-header">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <!-- max-width for ultra wide resolutions -->
+  <div class="container-fluid" style="max-width: 1400px">
+    <div class="row"  id="firstAside">
+      <aside class="col-lg-3 pb-3 historySec">
+        <h2 id="form-heading" class="mt-1 h3 form-label">
+          Search for a City:
+        </h2>
+        <form id="search-form" class="form">
+          <div class="form-inline form-group">
+            <div class="input-group searchAndHist">
+              <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
+                aria-labelledby="form-heading" aria-controls="today forecast" />
+              <div class="input-group-append">
+                <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">Search</button>
+                <hr id="hr" class="hr weather-hr">
+              </div>
+              <div class="dynamicBtns"></div>
+            </div>
+          </div>
+        </form>
+        <div class="list-group" id="history"></div>
+      </aside>
+      <div class="col-lg-9 pb-3 forecastDiv">
+        <section id="today" class="mt-3" role="region" aria-live="polite">
+          <div class="imgP">
+            <h2 class="dd">London (08/02/2023)</h2>
+            <img class="wicon" src="" alt="Weather icon">
+          </div>
+          <p class="tp">Temp: 13.63</p>
+          <p class="wd">Wind: 1.7 KPH</p>
+          <p class="hd">Humidity: 84%</p>
+        </section>
+        <h2>5-Day Forecast:</h2>
+        <section id="forecast" class="row mt-3" role="region" aria-live="polite">
+          <div class="future">
+            <p class="colorMe dd">09/02/2023</p>
+            <div class="icon"><img class="wicon0" src="" alt="Weather icon"></div>
+            <p class="colorMe tp">Temp: 60c</p>
+            <p class="colorMe wd">Wind: 75 KPH</p>
+            <p class="colorMe hd">Humidity: 90%</p>
+          </div>
+          <div class="future">
+            <p class="colorMe dd">09/02/2023</p>
+            <div class="icon"><img class="wicon1" src="" alt="Weather icon"></div>
+            <p class="colorMe tp">Temp: 60c</p>
+            <p class="colorMe wd">Wind: 75 KPH</p>
+            <p class="colorMe hd">Humidity: 90%</p>
+          </div>
+          <div class="future">
+            <p class="colorMe dd">09/02/2023</p>
+            <div class="icon"><img class="wicon2" src="" alt="Weather icon"></div>
+            <p class="colorMe tp">Temp: 60c</p>
+            <p class="colorMe wd">Wind: 75 KPH</p>
+            <p class="colorMe hd">Humidity: 90%</p>
+          </div>
+          <div class="future">
+            <p class="colorMe dd">09/02/2023</p>
+            <div class="icon"><img class="wicon3" src="" alt="Weather icon"></div>
+            <p class="colorMe tp">Temp: 60c</p>
+            <p class="colorMe wd">Wind: 75 KPH</p>
+            <p class="colorMe hd">Humidity: 90%</p>
+          </div>
+          <div class="future">
+            <p class="colorMe dd">09/02/2023</p>
+            <div class="icon"><img class="wicon4" src="" alt="Weather icon"></div>
+            <p class="colorMe tp">Temp: 60c</p>
+            <p class="colorMe wd">Wind: 75 KPH</p>
+            <p class="colorMe hd">Humidity: 90%</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/logic.js"></script>
+</body>
+
+</html>
